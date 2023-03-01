@@ -1,0 +1,61 @@
+body{
+    background-color: #fafafa;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto 0 auto;
+    background-color: white;
+    padding: 20px;
+}
+
+h1{
+    font-size: 38px;
+    line-height: 120%;
+}
+
+.author{
+    font-size: 14px;
+    color: #c1c1c1;
+}
+
+h2{
+    font-size: 36px;
+    text-transform: uppercase;
+    line-height: 120%;
+}
+
+h3{
+    font-size: 34px;
+}
+
+a{
+    color: rgb(58, 58, 255);
+    text-decoration: none;
+}
+
+.history{
+    list-style: none;
+}
+
+.history>li::before{
+    content: "✓";
+    margin-right: 20px;
+}
+
+p,div,h1,h2,h3{
+    line-height: 22px
+}
+
+#image1{
+    text-align: center;
+    /* margin: 0 auto 0 auto;
+    width: 800px; */
+}
+
