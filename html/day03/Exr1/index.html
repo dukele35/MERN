@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: 0;
+        }
+
+        .container {
+            width: 300px;
+            overflow-x: hidden;
+        }
+
+        article {
+            overflow: hidden;
+            border-bottom: 1px solid #a18989;
+            padding: 10px 0;
+        }
+
+        /* first article */
+        article:first-child .thumbnail {
+            margin-bottom: -5px;
+        }
+
+        article:first-child .thumbnail img {
+            width: 100%;
+            height: auto;
+        }
+
+        article:first-child .title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: orange;
+            padding: 10px;
+        }
+
+        article .content{
+            margin-top: 10px;
+        }
+
+        article .content .thumbnail{
+            display: inline-block;
+            float: left;
+            width: 40%;
+        }
+
+        article .content .thumbnail img {
+            width: 100%;
+            height: auto;
+        }
+
+        article .content .descrip {
+            display: inline-block;
+            float: right;
+            width: 60%;
+            padding-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <article>
+            <div class="thumbnail">
+                <img src="images/galaxy_z_fold_3.jpg" alt="">
+            </div>
+            <h3 class="title">8 the he iphone do camera</h3>
+        </article>
+        <article>
+            <h3 class="title">dell venue</h3>
+            <div class="content">
+                <div class="thumbnail">
+                    <img src="images/galaxy_z_fold_3.jpg" alt="">
+                </div>
+            <div class="descrip">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident eveniet molestiae corporis officia porro labore laboriosam molestias dolores consectetur, incidunt ipsum quasi quo at minus blanditiis, eum, temporibus nobis doloremque.</p>
+            </div>
+        </article>
+        <article>
+            <h3 class="title">dell venue</h3>
+            <div class="content">
+                <div class="thumbnail">
+                    <img src="images/galaxy_z_fold_3.jpg" alt="">
+                </div>
+            <div class="descrip">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, inventore assumenda vero nihil a iusto eaque quod quis perferendis animi. Esse animi magnam molestias molestiae ab atque hic velit maiores.</p>
+            </div>
+        </article>
+    </div>
+</body>
+</html>
