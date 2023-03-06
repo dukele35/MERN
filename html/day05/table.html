@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+    }
+    table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 50%;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 10px;
+    }
+    table tr td:first-child{
+        text-align: center;
+    }
+    .only{
+        vertical-align: top;
+    }
+    table tr:nth-child(2n+2){
+        background-color: #9efdf8;
+    }
+</style>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td class="only" rowspan="2">40</td>
+            </tr>
+            <tr>
+                <td>Mary</td>
+                <td>Moe</td>
+                <!-- <td>40</td> -->
+            </tr>
+            <tr>
+                <td>July</td>
+                <td>Dooley</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td colspan="2">July</td>
+                <td>6</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
