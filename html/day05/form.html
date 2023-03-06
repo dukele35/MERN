@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    .container{
+        width: 1200px;
+        margin: auto;
+        display: flex;
+    }
+    .input_control{
+        display: flex;
+        margin: 10px 0;
+    }
+    label{
+        width: 100px;
+        display: block;
+        margin-right: 10px;
+    }
+</style>
+<body>
+    <div class="container">
+        <form action="" method="GET" name="registerForm">
+            <div class="input_control">
+                <label for="user_name">User Name</label>
+                <input minlength="5" maxlength="10" type="text" placeholder="enter your user_name" required name="user_name" id="user_name"> 
+            </div>
+            <div class="input_control">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email"> 
+            </div>
+            <div class="input_control">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password"> 
+            </div>
+            <div class="input_control">
+                <label for="age">Age</label>
+                <input type="number" name="number">
+            </div>
+            <div class="input_control">
+                <label for="age">Sex</label>
+                <input type="radio" name="sex" value="0"> Female
+                <input type="radio" name="sex" value="1"> Male
+            </div>
+            <div class="input_control">
+                <label for="age">Hobbies</label>
+                <input type="checkbox" name="hobbies[]" value="0"> Football
+                <input type="checkbox" name="hobbies[]" value="1"> Swimming
+                <input type="checkbox" name="hobbies[]" value="2"> Reading
+            </div>
+            <div class="input_control">
+                <label for="age">Country</label>
+                <select name="country" id="country">
+                    <option value="0">Viet Nam</option>
+                    <option value="1">USA</option>
+                    <option value="2">China</option>
+                </select>
+            </div>
+            <div class="input_control">
+                <label for="age">Avatar</label>
+                <input type="file" name="avatar" id="avatar">
+            </div>
+            <div class="input_control">
+                <label for="age">Description</label>
+                <textarea name="description" id="description" cols="30" rows="10"></textarea>
+            </div>
+            <div class="input_control">
+                <input type="submit" value="Register">
+            </div>
+            <div class="input_control">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
