@@ -7,43 +7,173 @@
     <title>CV</title>
 </head>
 <style>
-    *{
-        padding: 0px;
-        margin: 0px;
-        box-sizing: border-box;
+    .container {
+      width: 1000px;
+      height: 100vh;
+      margin: 0 auto;
+      background-color: aquamarine;
     }
-    .container{
-        width: 1200px;
-        margin: auto;
+    .header-row1{
         display: flex;
+        height: 100px;
+        background-color: white;
     }
     .column-left{
         flex: 1;
         background-color: black;
-        /* height: 100px; */
-        padding: 20px;
+        color: white;
+        display: flex;
+        align-items: flex-end;
+    }
+    .column-left h1{
+        text-align: center;
+        padding-left: 30px;
     }
     .column-right{
         flex: 2;
-        padding: 20px;
     }
-    .photo{
-        width: 100%;
-        display: block;
-        height: auto;
+    .hearder-row2{
+        /* TODO: need explanation for display:flex - how this is different from display:block */
+        /* this example below shows having display:flex eliminates  */
+        display: flex; 
+        height: 100px;
+        background-color: white;
+    }
+    .text{
+        color: gray;
+        margin-left: 50px;
+        /* display: flex; */
+    }
+    header .hearder-row2 .text h1{
+        font-size: 40px;
+        letter-spacing: 10px;
+        font-weight: normal;
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+    header .hearder-row2 .text p{
+        font-size: 20px;
+        margin: 0px auto;
+        font-style: italic;
+        letter-spacing: 3px;
+    }
+    .row-content{
+        display: flex;
+    }
+
+    .column-left-container{
+        padding: 25px;
+    }
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .text-block {
+        margin-bottom: 40px;
+    }
+    .text-block .title-left{
+        font-weight: bold;
+        font-size: 12px;
+        margin-bottom: 2px;
+        text-transform: uppercase;
+    }
+    .text-block em{
+        font-size: 19px;
+        font-style: normal;
+    }
+    ul{
+        font-size: 19px;
+        font-style: normal;
+    }
+    .column-right-container{
+        padding: 0 30px;
+        /* padding-left:30px; */
+        /* TODO: why padding top is now working */
+        /* padding-top: 0px; */
     }
 </style>
 <body>
+
+    <!-- BIG DIV -->
     <div class="container">
-        <div class="column-left">
-            <img class="photo "src="photo.png">
-            <div class="content">
-                00000000
+
+        <!-- HEADER -->
+        <header>
+            <div class="header-row1">
+                <div class="column-left">
+                    <h1>RESUME</h1>
+                </div>
+                <div class="column-right"></div>
             </div>
-        </div>
-        <div class="column-right">
-            sth on the right 
-        </div>
+            <div class="hearder-row2">
+                <div class="text">
+                    <h1>ALAN WALKER</h1>
+                    <p>Graphic Designer</p>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN -->
+        <section>
+            <div class="row-content">
+
+                <!-- LEFT COLUMN -->
+                <div class="column-left">
+                    <div class="column-left-container">
+                        <img src="photo.png">
+                        <!-- TODO: why writing those elements, they automatically enter into new lines -->
+                        <h2>PROFILE</h2>
+
+                        <div class="text-block">
+                            <p class="title-left">Name</p>
+                            <em>Alan Walker</em>
+                        </div>
+
+                        <div class="text-block">
+                            <p class="title-left">Date of Birth</p>
+                            <em> 01/01/1990</em>
+                        </div>
+
+                        <div class="text-block">
+                            <p class="title-left">Phone</p>
+                            <em>0123456789</em>
+                        </div>
+
+                        <div class="text-block">
+                            <p class="title-left">Email</p>
+                            <em>alanwalker@gmail.com</em>
+                        </div>
+
+                        <div class="text-block">
+                            <p class="title-left">Website</p>
+                            <em>alanwalker.com</em>
+                        </div>
+
+                        <h2>HOBBIES</h2>
+                        <!-- TODO: how to make those list become star -->
+                        <ul>
+                            <li class="text-left">Dance</li>
+                            <li class="text-left">Read Book</li>
+                            <li class="text-left">Swimming</li>
+                          </ul>  
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN -->
+                <div class="column-right">
+                    <div class="column-right-container">
+                        <h2>JOB EXPERIENCES</h2>
+                        <h2>PROFESSIONAL SKILLS</h2>
+                        <h2>PERSONAL SKILL</h2>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
     </div>
+
 </body>
 </html>
