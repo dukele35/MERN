@@ -11,7 +11,7 @@
       width: 1000px;
       height: 100vh;
       margin: 0 auto;
-      background-color: aquamarine;
+      /* background-color: aquamarine; */
     }
     .header-row1{
         display: flex;
@@ -87,10 +87,41 @@
     }
     .column-right-container{
         padding: 0 30px;
-        /* padding-left:30px; */
-        /* TODO: why padding top is now working */
-        /* padding-top: 0px; */
     }
+    .column-right-container h2:first-child{
+        margin-top: 0px;
+    }
+    .content{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .content h3{
+        flex:1;
+        margin-top: 0px;
+    }
+    .content .information{
+        flex: 3;
+    }
+    .content .information h4{
+        font-size: 20px;
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+    .content .information h5{
+        font-size: 15px;
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+    .content .information p{
+        font-size: 15px;
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+
+
+
+
+
 </style>
 <body>
 
@@ -163,10 +194,53 @@
                 <!-- RIGHT COLUMN -->
                 <div class="column-right">
                     <div class="column-right-container">
-                        <h2>JOB EXPERIENCES</h2>
-                        <h2>PROFESSIONAL SKILLS</h2>
-                        <h2>PERSONAL SKILL</h2>
 
+                        <h2>JOB EXPERIENCES</h2>
+                        <div class="content">
+                            <h3>2014-2015</h3>
+                            <div class="information">
+                                <h4>COMPANY NAME</h4>
+                                <h5>POSITION HELD</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magnam, aut nihil perspiciatis nam quasi expedita sit, praesentium quidem repudiandae accusantium itaque sapiente totam sequi. Nisi at saepe optio rem.</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>2014-2015</h3>
+                            <div class="information">
+                                <h4>COMPANY NAME</h4>
+                                <h5>POSITION HELD</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magnam, aut nihil perspiciatis nam quasi expedita sit, praesentium quidem repudiandae accusantium itaque sapiente totam sequi. Nisi at saepe optio rem.</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>2014-2015</h3>
+                            <div class="information">
+                                <h4>COMPANY NAME</h4>
+                                <h5>POSITION HELD</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magnam, aut nihil perspiciatis nam quasi expedita sit, praesentium quidem repudiandae accusantium itaque sapiente totam sequi. Nisi at saepe optio rem.</p>
+                            </div>
+                        </div>
+                        <h2>EDUCATION</h2>
+                        <div class="content">
+                            <h3>2014-2015</h3>
+                            <div class="information">
+                                <h4>COMPANY NAME</h4>
+                                <h5>POSITION HELD</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magnam, aut nihil perspiciatis nam quasi expedita sit, praesentium quidem repudiandae accusantium itaque sapiente totam sequi. Nisi at saepe optio rem.</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>2014-2015</h3>
+                            <div class="information">
+                                <h4>COMPANY NAME</h4>
+                                <h5>POSITION HELD</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magnam, aut nihil perspiciatis nam quasi expedita sit, praesentium quidem repudiandae accusantium itaque sapiente totam sequi. Nisi at saepe optio rem.</p>
+                            </div>
+                        </div>
+                        <h2>PROFESSIONAL SKILLS</h2>
+                        <!-- TODO: make a skill bar -->
+                        <h2>PERSONAL SKILL</h2>
+                        <!-- TODO: make a skill bar -->
                     </div>
                 </div>
 
