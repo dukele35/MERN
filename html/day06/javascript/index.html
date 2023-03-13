@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: red;
+        }
+        p {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <script>
+        // using var to declare a variable
+        var course = "Javascript";
+        console.log(course);
+        // using let to declare a variable
+        let age = 15;
+        console.log(age);
+        // using const to declare a variable which is constant
+        const myName = "StudentA"; 
+        console.log(myName);
+
+        // pay attention to 
+        // 1. JS hoisted https://www.w3schools.com/js/js_hoisting.asp
+        // 2. JS scope https://www.w3schools.com/js/js_scope.asp
+        // 3. JS data type  https://www.w3schools.com/js/js_datatypes.asp
+
+        let isAdmin = true;
+        console.log(isAdmin); // boolean
+        let yourName = "your name"; // string
+        console.log(yourName);
+        let yourAge = 20; // number
+        console.log(yourAge);
+        let users = {name: "studentA", age:18} // object
+        console.log("users",users);  // to know which variable is
+        let usersList = ["studentA", "studentB", "studentC"] // array
+        console.log(usersList);
+        let yourNull = null; // null
+        console.log(yourNull);
+        let yourUndefined = undefined; // undefined
+        console.log(yourUndefined);
+
+        // methods
+        document.write('Hello world'); // printing straight to screen
+        document.writeln('Hello JS'); // printing straight to screen
+        document.writeln('Hello ABC'); // printing straight to screen with space between with writeln
+        document.write('<p>Hello XYZ</p>'); // printing straight to screen using <p> tag
+
+        // alert box    
+        alert('This is an alert'); 
+
+        // confirm box
+        let result = confirm('Are you sure?');
+        console.log('result',result); // true or false
+
+        // prompt box
+        let name = prompt('What is your name?');
+        console.log('name',name); // string
+
+        // TODO: need to know parseInt() & parseFloat()
+        // parseInt() & parseFloat()
+
+
+
+
+
+    </script>
+    <!-- Adjecent to body close tag is javascript or <script> tag -->
+</body>
+</html>
