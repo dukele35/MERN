@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>task1</h1>
+    <script>
+
+        document.write("<h4>Gia tri ban dau</h4>")
+        var valueA = 4;
+        var valueB = 5;
+        document.write("valueA = " + valueA);
+        document.write("<br>")
+        document.write("valueB = " + valueB);
+        document.write("<br>")
+        document.write("<br>")
+        sumAB(valueA, valueB);
+        subAB(valueA, valueB);
+        mulAB(valueA, valueB);
+        divAB(valueA, valueB);
+
+        document.write("<h4>Gia tri cap nhat</h4>")
+        var valueA = 7;
+        var valueB = 9;
+        document.write("valueA = " + valueA);
+        document.write("<br>")
+        document.write("valueB = " + valueB);
+        document.write("<br>")
+        document.write("<br>")
+        sumAB(valueA, valueB);
+        subAB(valueA, valueB);
+        mulAB(valueA, valueB);
+        divAB(valueA, valueB);
+
+
+        // sum
+        function sumAB(a,b){
+            document.writeln('sum =');
+            document.writeln(parseInt(a) + parseInt(b));
+            console.log('sum',parseInt(a) + parseInt(b));
+            document.write("<br>")
+            return a+b;
+        }
+
+        // sub
+        function subAB(a,b){
+            document.writeln('sub =');
+            document.writeln(parseInt(a) - parseInt(b));
+            console.log('sub',parseInt(a) - parseInt(b));
+            document.write("<br>")
+            return a-b;
+        }
+
+        // mul
+        function mulAB(a,b){
+            document.writeln('mul =');
+            document.writeln(parseInt(a) * parseInt(b));
+            console.log('mul',parseInt(a) * parseInt(b));
+            document.write("<br>")
+            return a*b;
+        }
+
+        // div
+        function divAB(a,b){
+            document.writeln('div =');
+            document.writeln(parseInt(a) / parseInt(b));
+            console.log('div',parseInt(a) / parseInt(b));
+            document.write("<br>")
+            return a/b;
+        }
+
+    </script>
+</body>
+</html>
