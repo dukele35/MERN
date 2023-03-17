@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 500px;
+        height: 700px;
+        margin: 0 auto;
+        padding: 60px;
+        border: 1px solid #ccc;
+    }
+
+    .input_control {
+        display: flex;
+        padding: 10px 20px;
+    }
+
+    .input_control label {
+        width: 80px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h2>Workshop 3</h2>
+        <form>
+            <div class="input_control">
+                <label for="x">x</label>
+                <input type="text" name="x" id="Sx" placeholder="enter x value" required>
+            </div>
+
+            <div class="input_control">
+                <label for="y">y</label>
+                <input type="text" name="y" id="y" placeholder="enter y value" required>
+            </div>
+
+            <div class="input_control">
+                <label for="operation">operation</label>
+                <select name="operation" id="operation">
+                    <option value="sum">sum</option>
+                    <option value="sub">sub</option>
+                    <option value="mul">mul</option>
+                    <option value="div">div</option>
+                </select>
+            </div>
+
+            <div class="input_control">
+                <input type="submit" value="Calculate">
+            </div>
+
+            <div class="input_control">
+                <label for="result">result</label>
+                <input type="text" name="result" id="result" disabled>
+            </div>
+        </form>
+    </div>
+    <script>
+        let x = document.getElementById('Sx').value;
+        console.log(x);
+    </script>
+</body>
+
+</html>

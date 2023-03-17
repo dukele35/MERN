@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = prompt('Please enter your number');
+        x = parseInt(x)
+        if (typeof x === 'number' && Number.isInteger(x)){
+            if(x % 2 == 0) {
+                console.log("The number is even.");
+                }
+            else {
+                console.log("The number is odd.");
+            }
+        }
+        else{
+            console.log('x is not a number');
+        }
+    </script>
+</body>
+</html>
