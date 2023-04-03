@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event handling</title>
+</head>
+<body>
+    <button onclick="f1()">CLICK ME</button>
+    <input onblur="f2()" placeholder="Enter Your name">
+    <span onmouseenter="f3()">HOVER ME</span>
+    
+    <script>
+        function f1(){
+            console.log("ON CLICK");
+        }
+        
+        function f2(){
+            console.log("ON BLUR");
+        }
+
+        function f3(){
+            console.log("ON HOVER");
+        }
+    </script>
+</body>
+</html>
