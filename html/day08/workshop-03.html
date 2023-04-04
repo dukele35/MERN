@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function student(name, age, sex, DOB, height, weight, nationality) {
+            this.name = name;
+            this.age = age;
+            this.sex = sex;
+            this.DOB = DOB;
+            this.height = height;
+            this.weight = weight;
+            this.nationality = nationality;
+        }
+
+        var student1 = new student("John", 24, "male", "12/03/1993", "179cm", "78kg", "Irish");
+        console.log(student1);
+
+        var student2 = {name: "Allen", age: 33, sex: "male"}
+        console.log(student2);
+    </script>
+</body>
+</html>

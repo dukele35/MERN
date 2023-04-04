@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 1. defining an object
+        function student(name, age, address) {
+            this.name = name;
+            this.age = age;
+            this.address = address;
+        }
+
+        var student1 = new student("John", 20, "Hanoi");
+        var student2 = new student("Mary", 21, "HCM");
+        var student3 = new student("Peter", 22, "Danang");
+
+        console.log(student1);
+
+
+        // 2. defining an object
+        let studentA = {name: 'Tuan', age: 28, address: "Da Nang"};
+        let studentB = {name: 'Hanh', age: 34};
+
+        console.log(studentA);
+        console.log(studentB);
+
+
+        // 3. accessing an object's element
+        console.log(student1.name)
+        console.log(studentA.name);
+        console.log(studentA['name']);
+
+
+        // 4. adding an element to an object
+        studentB = {...studentB, school:"LQD"}  // ... is copying all of the elements of StudentB, then adding new element school at the end
+        console.log(studentB);
+
+
+        // 5. updating an element of an object
+        studentB = {...studentB, age:45}  // ... is copying all of the elements of StudentB
+        console.log(studentB);
+
+
+        // 6. deleting an element of an object
+        delete studentB.school;
+        console.log(studentB);
+
+
+        // 7. looping through an object
+        for (let key in studentB){
+            console.log(key + " : " + studentB[key]);
+        }
+
+
+        // 8. defining an array of objects
+        let students = [
+            {name: 'Tuan', age: 28, address: "Da Nang"},
+            {name: 'Hanh', age: 34},
+            {name: 'Peter', age: 22, address: "Danang"}
+        ];
+        console.log(students)
+
+
+
+    </script>
+
+</body>
+</html>

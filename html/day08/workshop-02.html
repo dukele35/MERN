@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Workshop 02</h2>
+    <label for="gia">Gia</label>
+    <input type="text" id="gia" name="gia" value="10000" onkeyup="calculate()">
+    <br>
+    <br>
+
+    <label for="soLuong">So luong</label>
+    <input type="text" id="soLuong" name="soLuong" value="1">
+    <button id="increase">+</button>
+    <button id="decrease">-</button>
+    <br>
+    <br>
+
+    <label for="tongTien">Tong tien</label>
+    <input type="text" id="tongTien" name="tongTien">
+    <br>
+    <br>
+
+    <script>
+
+        let gia = document.getElementById("gia");
+        let soLuong = document.getElementById("soLuong");
+        let increase = document.getElementById("increase");
+        let decrease = document.getElementById("decrease");
+        let tongTien = document.getElementById("tongTien");
+        calculate(); 
+
+        function increaseQuantity(){
+            soLuong.value = parseInt(soLuong.value) + 1;
+            tongTien.value = parseInt(gia.value) * parseInt(soLuong.value);
+        }
+
+        function decreaseQuantity(){
+            if(soLuong.value > 1){
+                soLuong.value = parseInt(soLuong.value) - 1;
+                tongTien.value = parseInt(gia.value) * parseInt(soLuong.value);
+            }
+        }
+
+
+        function calculate(){
+            tongTien.value = parseInt(gia.value) * parseInt(soLuong.value);
+        }
+
+        increase.addEventListener("click", increaseQuantity);
+        decrease.addEventListener("click", decreaseQuantity);
+
+
+    </script>
+</body>
+</html>

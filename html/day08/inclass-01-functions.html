@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello Javascript</h1>
+
+    <script>
+        // defining a function
+        function hello(){
+            console.log('Hello world')
+        }
+
+        // calling a function
+        hello();
+
+        // defining a function with parameters
+        function helloBody(name = "Softech"){
+            console.log('Hello ' + name)
+        }
+
+        // calling a function with parameters
+        helloBody('Softech');
+        helloBody('Softech 2');
+
+
+        // defining a function with return value
+        function helloReturn(name = "Softech"){
+            return 'Hello ' + name;
+        }
+
+        // calling a function with return value
+        var result = helloReturn('Softech');
+        console.log(result)
+
+        // ES5
+        let sumCal = function(a,b){
+            return a + b;
+        }
+        console.log(sumCal(1,2))
+
+        // ES6 - Arrow function
+        let sumCal2 = (a,b) => {
+            return a + b;
+        }
+        console.log(sumCal2(5,6))
+
+
+    </script>
+
+</body>
+</html>

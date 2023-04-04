@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Workshop 01</h2>
+    <label for="numA">Number A</label>
+    <input type="text" id="numA" name="nameA">
+    <br>
+    <br>
+    <label for="numB">Number B</label>
+    <input type="text" id="numB" name="nameB">
+    <br>
+    <br>
+    <h3>Please chooose the calculation</h3>
+    <br>
+    <input type="radio" id="add" name="calculation" value="add">
+    <label for="add">Add</label>
+    <br>
+    <input type="radio" id="sub" name="calculation" value="sub">
+    <label for="sub">Subtract</label>
+    <br>
+    <input type="radio" id="mul" name="calculation" value="mul">
+    <label for="mul">Multiply</label>
+    <br>
+    <input type="radio" id="div" name="calculation" value="div">
+    <label for="div">Divide</label>
+    <br>
+    <br>
+    <button id="calculate">Calculate</button>
+    <br>
+    <br>
+    <label for="result">Result</label>
+    <input type="text" id="result" name="nameResult">
+    
+    <script>
+        let numA = document.getElementById("numA");
+        let numB = document.getElementById("numB");
+        let add = document.getElementById("add");
+        let sub = document.getElementById("sub");
+        let mul = document.getElementById("mul");
+        let div = document.getElementById("div");
+        let calculate = document.getElementById("calculate");
+        let result = document.getElementById("result");
+
+        function calculation(){
+            if(add.checked){
+                result.value = parseInt(numA.value) + parseInt(numB.value);
+            }else if(sub.checked){
+                result.value = parseInt(numA.value) - parseInt(numB.value);
+            }else if(mul.checked){
+                result.value = parseInt(numA.value) * parseInt(numB.value);
+            }else if(div.checked){
+                result.value = parseInt(numA.value) / parseInt(numB.value);
+            }
+        }
+
+        calculate.addEventListener("click", calculation)
+
+    </script>
+</body>
+</html>
