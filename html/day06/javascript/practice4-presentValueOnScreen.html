@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="numA" name="a" placeholder="input value a"/>
+    <input type="text" id="numB" name="b" placeholder="input value b"/>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <div id="result"></div>
+
+
+    <script>
+        function calculate(){
+            var a = document.getElementById('numA').value;
+            var b = document.getElementById('numB').value;
+            var result = document.getElementById('result');
+            var sum = parseInt(a) + parseInt(b);
+            var sub = parseInt(a) - parseInt(b);
+            var mul = parseInt(a) * parseInt(b);
+            var div = parseInt(a) / parseInt(b);
+            result.innerHTML = "sum = " + sum + "<br>" + "sub = " + sub + "<br>" + "mul = " + mul + "<br>" + "div = " + div;
+        }
+
+
+    </script>
+</body>
+</html>
